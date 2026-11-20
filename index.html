@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For My Love ❤️</title>
+<style>
+body {
+  background: linear-gradient(135deg,#ffb6c1,#ffe4ec);
+  font-family: sans-serif;
+  text-align: center;
+  padding: 35px 15px;
+  color: #d6336c;
+}
+.card {
+  background: white;
+  border-radius: 25px;
+  padding: 30px 15px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 5px 25px #e88da8;
+}
+h1 { font-size: 27px; }
+.heart { font-size: 65px; }
+button {
+  border: none;
+  border-radius: 25px;
+  padding: 13px 28px;
+  margin: 10px;
+  font-size: 18px;
+  background: #ff4d88;
+  color: white;
+}
+#answer {
+  font-size: 20px;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="heart">💗</div>
+  <h1>မလေးရေ ❤️</h1>
+  <p>မောင့်မှာ မအတွက် Surprise လေးရှိတယ်နော်။</p>
+  <h3>မောင့်ကို ချစ်လားဟင် 🥺</h3>
+  <button onclick="yes()">ချစ်တယ် ❤️</button>
+  <button onclick="no()">မချစ်ဘူး 🙈</button>
+  <div id="answer"></div>
+</div>
+<script>
+function yes() {
+ document.getElementById("answer").innerHTML =
+ "မောင်လည်း မကို အရမ်းချစ်တယ်နော် 💕😘";
+}
+function no() {
+ document.getElementById("answer").innerHTML =
+ "ဟင့်အင်း မောင်ကတော့ မကို ချစ်နေမှာပဲ 🥺❤️";
+}
+</script>
+</body>
+</html>
